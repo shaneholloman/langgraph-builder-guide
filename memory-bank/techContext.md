@@ -60,10 +60,10 @@
 
 ## Technical Constraints
 
-1. **LangGraph Builder Export Constraints**
-   - Exports provide structure but not implementation
-   - Boilerplate files may require adaptation for TypeScript compatibility
-   - Generated stubs may not handle all edge cases
+1. **LangGraph Builder Export Implementation Considerations**
+   - Exports provide the architecture and structure that needs to be implemented
+   - Implementing TypeScript functionality requires attention to typing and async patterns
+   - Proper implementation requires understanding the intended flow and responsibilities of each node
 
 2. **LangGraph Implementation Challenges**
    - Asynchronous operations must be handled appropriately
@@ -87,10 +87,10 @@
    - Rationale: Benefit from latest features, security patches, and compatibility
    - Tradeoff: Potential for dependency updates to introduce issues
 
-3. **TypeScript Adaptation Patterns**
-   - Decision: Demonstrate patterns for adapting LangGraph Builder exports to work with TypeScript
-   - Rationale: Addresses common implementation challenges developers face
-   - Tradeoff: May deviate from the generated boilerplate in some cases
+3. **TypeScript Implementation Patterns**
+   - Decision: Demonstrate patterns for implementing LangGraph Builder exports with TypeScript
+   - Rationale: Provides guidance for handling async operations and type safety
+   - Tradeoff: Requires attention to TypeScript-specific implementation details
 
 4. **Immutable State Management**
    - Decision: Implement consistent immutable state update patterns

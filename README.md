@@ -79,9 +79,9 @@ The Claude chat example in this repository demonstrates each of these steps with
 
 When implementing LangGraph Builder exports, you may encounter these common challenges:
 
-1. **TypeScript compatibility issues**:
-   - Challenge: The generated stubs may not always align perfectly with TypeScript's type system, especially for async operations.
-   - Solution: You may need to adjust the implementation to properly handle types, possibly using direct StateGraph implementation instead of the stub.
+1. **TypeScript implementation considerations**:
+   - Challenge: Implementing asynchronous operations in TypeScript requires careful attention to typing within the LangGraph framework.
+   - Solution: Minor adaptations to the implementation pattern can address these challenges while preserving the core graph structure from LangGraph Builder. This typically involves properly typing async functions and ensuring consistent state interfaces.
 
 2. **Asynchronous operation handling**:
    - Challenge: LangGraph nodes often need to perform async operations, which can be tricky to implement correctly.

@@ -17,9 +17,9 @@
 
 3. **TypeScript Implementation Patterns**
    - Use strict typing for state interfaces
-   - Adapt LangGraph Builder exports for proper TypeScript compatibility
+   - Implement TypeScript functionality for LangGraph Builder exports
    - Handle asynchronous operations consistently
-   - Document TypeScript challenges and solutions for different node types
+   - Document TypeScript implementation patterns for different node types
 
 ## Implementation Guidelines
 
@@ -103,8 +103,8 @@
    - Created structure for separating core patterns from example implementation
    - Working toward clearer documentation of the implementation process
 
-3. **LangGraph Adaptation Patterns**
-   - Discovered TypeScript compatibility issues with generated stubs
+3. **LangGraph Implementation Patterns**
+   - Implemented TypeScript patterns for working with LangGraph Builder exports
    - Developed approaches for proper async operation handling
    - Created patterns for state management and routing
    - Documented solutions to common implementation challenges

@@ -45,7 +45,7 @@ The project is currently in a functional example state with these key components
 1. **Template Purpose**: The repository's primary purpose is to serve as a guide and template for implementing LangGraph Builder exports, not as an end-user application.
 2. **Example Implementation**: The Claude chat application is just an example to demonstrate the implementation patterns.
 3. **Latest Dependencies**: We're using the latest versions of all packages for maximum compatibility and forward-looking support.
-4. **TypeScript Adaptation**: When necessary, we're adapting the generated stub for better TypeScript compatibility, which is a pattern others may need to follow.
+4. **TypeScript Implementation**: We've implemented proper TypeScript patterns to handle asynchronous operations and state management within the LangGraph framework.
 5. **Separation of Concerns**: We're maintaining a clear separation between reusable patterns and example-specific code.
 
 ### Under Consideration
