@@ -44,7 +44,8 @@
 
 ## Project Preferences
 
-1. **Dependencies**
+1. **Dependencies and Package Management**
+   - Always use pnpm for package management (REQUIRED)
    - Use the latest versions of all packages for maximum compatibility
    - Minimal dependencies for core template functionality
    - Clear distinction between core dependencies and example-specific ones
@@ -60,9 +61,12 @@
    - Status formats: [x] for complete, [ ] for incomplete, [-] for partial, [PLANNED] for planned
 
 3. **Implementation Testing**
+   - Use simplified test approach focusing on core functionality
+   - Each example app should have a single consolidated test file
+   - Prioritize testing state management and core logic over implementation details
+   - Minimize test maintenance burden with focused test cases
+   - Use mocks judiciously for external dependencies
    - Document testing approaches for different types of LangGraph implementations
-   - Provide guidance on testing node logic effectively
-   - Include adaptation points for testing different types of implementations
 
 ## Known Workflow Patterns
 

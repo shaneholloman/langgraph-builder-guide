@@ -7,7 +7,10 @@
     "build": "tsc",
     "start": "ts-node index.ts",
     "dev": "ts-node-dev --respawn index.ts",
-    "examples:claude-chat": "ts-node examples/claude-chat/index.ts"
+    "examples:claude-chat": "ts-node examples/claude-chat/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:all": "jest --runInBand"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "latest",
@@ -15,7 +18,10 @@
     "dotenv": "latest"
   },
   "devDependencies": {
+    "@types/jest": "latest",
     "@types/node": "latest",
+    "jest": "latest",
+    "ts-jest": "latest",
     "ts-node": "latest",
     "ts-node-dev": "latest",
     "typescript": "latest"
