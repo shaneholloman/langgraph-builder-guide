@@ -1,0 +1,110 @@
+# LangGraph Builder Implementation Guide - Project Intelligence
+
+## Implementation Patterns
+
+### Template Organization
+
+1. **Implementation Structure**
+   - Boilerplate files: spec.yml, stub.ts, implementation.ts (to be replaced with new exports)
+   - Supporting files: constants.ts, types.ts (to be adapted for new implementations)
+   - Core files: index.ts (serves as template for new implementations)
+
+2. **Core/Example Separation**
+   - Clearly distinguish between core template code and example-specific code
+   - Example implementation (Claude chat) serves to demonstrate patterns
+   - Core implementation patterns should be applicable to any LangGraph Builder export
+   - Comments should indicate which parts would be replaced for new exports
+
+3. **TypeScript Implementation Patterns**
+   - Use strict typing for state interfaces
+   - Adapt LangGraph Builder exports for proper TypeScript compatibility
+   - Handle asynchronous operations consistently
+   - Document TypeScript challenges and solutions for different node types
+
+## Implementation Guidelines
+
+1. **LangGraph Builder Export Implementation**
+   - Analyze the exported files to understand the intended graph structure
+   - Identify the purpose and responsibilities of each node
+   - Implement appropriate business logic for each node
+   - Connect the graph according to the defined architecture
+   - Document implementation decisions and patterns
+
+2. **External Service Integration**
+   - Abstract external service interactions
+   - Implement proper error handling for API calls
+   - Structure service requests and responses according to LangGraph patterns
+   - Document integration patterns that can be applied to other services
+
+3. **State Management Implementation**
+   - Define appropriate state interfaces for the specific application
+   - Implement immutable state update patterns
+   - Ensure proper typing throughout the implementation
+   - Document state management patterns applicable to different applications
+
+## Project Preferences
+
+1. **Dependencies**
+   - Use the latest versions of all packages for maximum compatibility
+   - Minimal dependencies for core template functionality
+   - Clear distinction between core dependencies and example-specific ones
+   - Document dependency purposes and adaptation points
+
+2. **Documentation**
+   - Focus on implementation patterns rather than specific application details
+   - Clear guidance on replacing example exports with new ones
+   - Document common challenges and solutions for implementing LangGraph Builder exports
+   - Update memory-bank files when implementation patterns are refined
+   - STRICTLY FORBIDDEN: Never use emojis in any documentation
+   - Use text-based status indicators (e.g., [x], [ ], [-]) instead of emojis
+   - Status formats: [x] for complete, [ ] for incomplete, [-] for partial, [PLANNED] for planned
+
+3. **Implementation Testing**
+   - Document testing approaches for different types of LangGraph implementations
+   - Provide guidance on testing node logic effectively
+   - Include adaptation points for testing different types of implementations
+
+## Known Workflow Patterns
+
+1. **Implementation Process**
+   - Analyze LangGraph Builder exports
+   - Set up project environment
+   - Define state interfaces
+   - Implement node logic
+   - Connect graph components
+   - Test implementation
+   - Document implementation patterns
+
+2. **Export Replacement**
+   - Replace boilerplate files with new exports
+   - Adapt state interfaces to new requirements
+   - Implement business logic for new nodes
+   - Adjust routing and entry points
+   - Update documentation to reflect changes
+   - Test the new implementation
+
+3. **Error Resolution**
+   - Distinguish between framework errors and implementation errors
+   - For framework errors, consult LangGraph documentation
+   - For implementation errors, focus on state management and async handling
+   - Document solutions to common implementation challenges
+
+## Evolution Notes
+
+1. **Repository Purpose Evolution**
+   - Initially focused on building a Claude chat application
+   - Evolved to emphasize implementation patterns for LangGraph Builder exports
+   - Now positioned as a template and guide for implementing any LangGraph Builder export
+   - Future focus on documenting the export replacement process
+
+2. **Implementation Pattern Evolution**
+   - Identified common challenges in implementing LangGraph Builder exports
+   - Developed patterns for adapting exports to TypeScript
+   - Created structure for separating core patterns from example implementation
+   - Working toward clearer documentation of the implementation process
+
+3. **LangGraph Adaptation Patterns**
+   - Discovered TypeScript compatibility issues with generated stubs
+   - Developed approaches for proper async operation handling
+   - Created patterns for state management and routing
+   - Documented solutions to common implementation challenges

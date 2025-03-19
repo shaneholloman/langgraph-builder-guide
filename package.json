@@ -1,0 +1,22 @@
+{
+  "name": "langgraph-claude-chat",
+  "version": "1.0.0",
+  "description": "A CLI chat application using LangGraph and Claude",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node index.ts",
+    "dev": "ts-node-dev --respawn index.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "@langchain/langgraph": "latest",
+    "dotenv": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "ts-node": "latest",
+    "ts-node-dev": "latest",
+    "typescript": "latest"
+  }
+}
