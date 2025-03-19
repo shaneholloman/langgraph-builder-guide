@@ -1,12 +1,13 @@
 {
-  "name": "langgraph-claude-chat",
+  "name": "langgraph-builder-guide",
   "version": "1.0.0",
-  "description": "A CLI chat application using LangGraph and Claude",
+  "description": "A guide for implementing LangGraph Builder exports with example implementations",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "start": "ts-node index.ts",
-    "dev": "ts-node-dev --respawn index.ts"
+    "dev": "ts-node-dev --respawn index.ts",
+    "examples:claude-chat": "ts-node examples/claude-chat/index.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "latest",

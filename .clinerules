@@ -5,7 +5,7 @@
 ### Template Organization
 
 1. **Implementation Structure**
-   - Boilerplate files: spec.yml, stub.ts, implementation.ts (to be replaced with new exports)
+   - Boilerplate files: spec.yml, stub.ts, implementation.ts (could be eventually replaced with new exports from langgraph-builder)
    - Supporting files: constants.ts, types.ts (to be adapted for new implementations)
    - Core files: index.ts (serves as template for new implementations)
 

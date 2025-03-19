@@ -1,6 +1,6 @@
 # LangGraph Builder Implementation Guide
 
-This repository demonstrates the process of taking raw boilerplate exports from LangGraph Builder and implementing them as functional applications. The Claude chat application included here serves as an example implementation to illustrate the general workflow and common patterns.
+This repository demonstrates the process of taking raw boilerplate exports from LangGraph Builder and implementing them as functional applications. It serves as a guide and template for building applications from LangGraph Builder exports.
 
 ## Purpose
 
@@ -11,13 +11,26 @@ The primary purpose of this repository is to:
 3. Demonstrate solutions to common challenges in the implementation process
 4. Serve as a template for implementing your own LangGraph Builder exports
 
-The Claude chat application is just an example use case - the real value is in the patterns and processes demonstrated that can be applied to any LangGraph Builder export.
+## Project Structure
+
+```tree
+langgraph-builder-guide/
+├── langgraph-builder-exports/   # Original exports from LangGraph Builder
+│   ├── langgraph-agent.zip
+│   └── langgraph-agent-export/  # Ephemerally extracted files (for temporary reference)
+├── examples/                    # Implemented applications
+│   └── claude-chat/             # CLI chat example using Claude
+├── index.ts                     # Root entry point (runs the example)
+└── memory-bank/                 # Documentation about the implementation process
+```
+
+The Claude chat application is an example use case - the real value is in the patterns and processes demonstrated that can be applied to any LangGraph Builder export.
 
 ## What is LangGraph?
 
 LangGraph is a framework for building stateful, multi-actor applications with Large Language Models (LLMs). It helps organize the flow of information between different components, making it easier to create complex AI applications. [LangGraph Builder](https://build.langchain.com/) provides a visual interface for designing these applications.
 
-## LangGraph Builder Export Files
+## LangGraph Builder Exports
 
 When you design a graph in LangGraph Builder and export it, you typically receive three boilerplate files:
 
@@ -25,13 +38,33 @@ When you design a graph in LangGraph Builder and export it, you typically receiv
 2. **stub.ts**: Contains the TypeScript stub code that implements the structure defined in spec.yml.
 3. **implementation.ts**: A placeholder file where you add your custom business logic.
 
-These files serve as the foundation for your application but require additional work to become functional. This repository demonstrates that process using a Claude chat application as an example.
+These files serve as the foundation for your application but require additional work to become functional. The `/langgraph-builder-exports` directory contains the original exports that were used as starting points for the examples.
 
 You can create your own boilerplate files using [LangGraph Builder](https://build.langchain.com/), a visual interface for designing LangGraph applications. You can also self-host LangGraph Builder using the code from [this GitHub repository](https://github.com/langchain-ai/langgraph-builder).
 
+## Example Implementations
+
+The `/examples` directory contains working implementations built from LangGraph Builder exports:
+
+- **claude-chat**: A CLI chat application using Claude as the LLM
+
+Each example demonstrates how to implement a specific type of application from a LangGraph Builder export, showing real-world patterns for state management, async operations, and external service integration.
+
+## Running Examples
+
+To run the Claude chat example:
+
+```bash
+# From the project root
+npx ts-node index.ts
+
+# Or directly from the example directory
+npx ts-node examples/claude-chat/index.ts
+```
+
 ## Implementation Process
 
-The process of turning LangGraph Builder exports into a functional application follows these general steps, demonstrated with our Claude chat example:
+The process of turning LangGraph Builder exports into a functional application follows these general steps:
 
 1. **Analyze the generated structure**: Understand the nodes, edges, and flow defined in the boilerplate files.
 2. **Set up the project environment**: Create the necessary configuration files (package.json, tsconfig.json, etc.).
@@ -118,18 +151,15 @@ A detailed walkthrough of this process will be added as a priority next step.
 3. **Create testing patterns**: Establish patterns for testing LangGraph applications
 4. **Develop advanced routing examples**: Show more complex conditional routing scenarios
 
-## Example Implementation: Claude Chat Application
+## Adding New Examples
 
-As a concrete example, this repository includes a Claude chat application implementation. This demonstrates the patterns described above in a real-world context.
+To add a new example from a LangGraph Builder export:
 
-### Running the Example
+1. Place the export zip file in `/langgraph-builder-exports`
+2. Create a new directory in `/examples` for your implementation
+3. Implement the business logic following the patterns demonstrated in existing examples
+4. Update the root-level index.ts to point to your new example (optional)
 
-To run the Claude chat example:
+## Documentation
 
-```
-npx ts-node index.ts
-```
-
-Type your messages at the prompt and receive responses from Claude. Type "exit" to end the conversation.
-
-This example serves as a reference for how to implement your own LangGraph Builder exports, regardless of the specific application you're building.
+The `/memory-bank` directory contains detailed documentation about the implementation process, patterns, and challenges. It serves as a comprehensive guide to implementing LangGraph Builder exports.

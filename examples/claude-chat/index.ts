@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { runAgent } from './examples/claude-chat/implementation';
+import { runAgent } from './implementation';
 
-// Run the CLI chat application from the examples directory
+// Run the CLI chat application
 runAgent().catch(error => {
   console.error('Error running application:', error);
   process.exit(1);
